@@ -1,7 +1,31 @@
+:root {
+  --color-fondo: #A58C65;
+  --color-texto: #000;
+  --color-crema: #ffebaa;
+  --color-cafe-claro: #9F773A;
+  --color-cafe-oscuro: #6F4D19;
+  --color-verde: #5F8752;
+  --color-azul: #4A6686;
+}
+
 .card {
-  background-color: #d8eeff;
+  background-color: var(--color-crema);
 }
 
 body {
-  background-color: #eee0ca;
+  background-color: var(--color-cafe-claro);
+}
+
+.custom-navbar {
+  background-color: var(--color-verde);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #FFFFFF;
+  /* Cambia el color del texto a blanco */
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+  /* Cambia el color del texto a blanco  en webiblio*/
 }/*# sourceMappingURL=changes.css.map */
