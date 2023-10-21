@@ -1,35 +1,115 @@
 :root {
-    --color-fondo: #A58C65;
+    --color-fondo: #f8e2cf;
+    --color-blanco: #ffff;
     --color-texto: #000;
-    --color-crema: #ffebaa;
-    --color-cafe-claro: #9F773A;
+    --color-navbar: #98521a;
+    --color-card: #ffbe86;
     --color-cafe-oscuro: #6F4D19;
     --color-verde: #5F8752;
     --color-azul: #4A6686;
 }
 
 .card {
-    background-color: var(--color-crema);
+    background-color: var(--color-card);
 }
 
 body {
-    background-color: var(--color-cafe-claro)
+    background-color: var(--color-fondo);
 }
 
 
 //ESTILOS DE LA BARRA DE NAVEGACION--------------------------------------
 .custom-navbar {
-    background-color: var(--color-verde);
+    background-color: var(--color-navbar);
 }
 
 .custom-navbar .navbar-nav .nav-link {
-    color: #FFFFFF;
+    color: var(--color-blanco);
     /* Cambia el color del texto a blanco */
 }
 
 .navbar-brand {
-    color: #FFFFFF;
+    color: var(--color-blanco);
     /* Cambia el color del texto a blanco  en webiblio*/
 }
 
 //FIN DE LOS ESTILOS DE NAVEGACION--------------------------------------
+
+//ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
+.card-text {
+    text-align: center;
+}
+
+.card-img-top {
+    height: 40rem;
+}
+
+.card-img-top-1 {
+    height: 40rem;
+    width: 26rem;
+}
+
+.card-img-top-2 {
+    height: 30rem;
+    width: 17rem;
+}
+
+.card-img-top-3 {
+    height: 14rem;
+    width: 9rem;
+    margin-left: 1.5rem;
+}
+
+//ESTILOS DEl CARDS--------------------------------------
+.mov-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.mov-2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.card-title,
+.card-autor {
+    text-align: center;
+}
+
+.card-sinopsis {
+    font-size: 1.2rem;
+
+}
+
+.col-card {
+    width: 19rem;
+}
+
+.title-s {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1.5rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-texto);
+    }
+
+    .title-c {
+        margin-left: 1.5rem;
+    }
+}
+
+//FIN DE LOS ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
