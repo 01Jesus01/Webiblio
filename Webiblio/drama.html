@@ -11,6 +11,7 @@
     <link href="../css/changes.css" rel="stylesheet" />
 </head>
 
+
 <body>
     <!-----------------------------------------BARRA DE NAVEGACION------------------------------------------------------>
     <!-- ESTA SECCION ESTA LA BARRA DE NAVEGACION-->
@@ -35,7 +36,8 @@
                         <a class="nav-link" href="#">Populares</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Categoria
                         </a>
                         <ul class="dropdown-menu">
@@ -46,10 +48,18 @@
                         </ul>
                     </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="inputBusqueda">
+                  </form>
+                  <div id="resultadoBusqueda" class="container_buscador">
+                    <!--Aqui se muestra el conatiner no hay que poner nada aqui :)) -->
+                  </div>
+                  
             </div>
         </div>
     </nav>
     <!-----------------------------------------FIN DE LA BARRA DE NAVEGACION------------------------------------------------------>
+
 
     <br><br><br><br>
     <section class="container mt-3 mb-3">
@@ -112,6 +122,7 @@
         </div>
     </div>
     <br><br><br>
+    <script src="../js/buscador.js"></script>
 </body>
 
 </html>

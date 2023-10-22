@@ -33,6 +33,51 @@ body {
     /* Cambia el color del texto a blanco  en webiblio*/
 }
 
+
+/* Seccion donde esta el buscador --------------------------------------------------------*/
+/* el conatiner es la caja donde va los resultados de las busquedas*/
+.container_buscador{
+    width: 400px;
+    height: auto;
+    display: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    position: fixed;
+    top: 7.5%;
+    left: 0;
+    right: 0;
+    margin-left: 400px;
+    border-radius: 10px;
+    z-index: 9999; /* Pone el conatiner hasta arriba para que se vea glotante en la pagina */
+}
+/* La caja de container que modifica el texto */
+.container_buscador a {
+    color: #000000;
+    text-decoration: none; 
+    size: 12px;
+    text-align: left; 
+  }
+
+.container_buscador ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0; 
+    margin: 0; 
+}
+  
+.container_buscador ul li {
+    padding: 0; 
+    margin: 0; 
+}
+/* Hover cuando seleccionas un resultado de la busqueda del container caja. */
+.container_buscador a:hover{
+    color: rgb(150, 150, 150);
+}
+/* Seccion del buscador termina aqui--------------------------------------------------------*/
+  
+
+
 //FIN DE LOS ESTILOS DE NAVEGACION--------------------------------------
 
 //ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
@@ -42,8 +87,12 @@ body {
 
 .card-img-top {
     height: 40rem;
+    
 }
-
+// ----
+.card-img-top:hover{
+    filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón por encima */
+}
 .card-img-top-1 {
     height: 40rem;
     width: 26rem;
@@ -111,5 +160,8 @@ body {
         margin-left: 1.5rem;
     }
 }
+
+
+
 
 //FIN DE LOS ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
