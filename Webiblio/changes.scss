@@ -5,8 +5,6 @@
     --color-navbar: #98521a;
     --color-card: #ffbe86;
     --color-cafe-oscuro: #6F4D19;
-    --color-verde: #5F8752;
-    --color-azul: #4A6686;
 }
 
 .card {
@@ -33,29 +31,73 @@ body {
     /* Cambia el color del texto a blanco  en webiblio*/
 }
 
-
+.ml-auto {
+    margin-left: auto;
+}
 /* Seccion donde esta el buscador --------------------------------------------------------*/
 /* el conatiner es la caja donde va los resultados de las busquedas*/
 .container_buscador{
-    width: 400px;
+    width: 25rem;
     height: auto;
     display: center;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ffffff;
+    background-color: var(--color-blanco);
+    padding: 0.625rem;
+    border: 1px solid var(--color-blanco);
     position: fixed;
     top: 7.5%;
     left: 0;
     right: 0;
-    margin-left: 400px;
-    border-radius: 10px;
+    margin-left: 19.688rem;
+    border-radius: 0.625rem;
     z-index: 9999; /* Pone el conatiner hasta arriba para que se vea glotante en la pagina */
 }
 /* La caja de container que modifica el texto */
 .container_buscador a {
-    color: #000000;
+    color: var(--color-texto);
     text-decoration: none; 
-    size: 12px;
+    size: 0.75rem;
+    text-align: left; 
+  }
+
+.container_buscador ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0; 
+    margin: 0; 
+}
+  
+.container_buscador ul li {
+    padding: 0; 
+    margin: 0; 
+}
+/* Hover cuando seleccionas un resultado de la busqueda del container caja. */
+.container_buscador a:hover{
+    color: rgb(150, 150, 150);
+}
+
+/* Seccion del buscador termina aqui--------------------------------------------------------*/
+
+//Media Query para el buscador para que sea responsivo---------------------------------------
+@media screen and (max-width: 991px) and (min-width: 500px) {
+    /* el conatiner es la caja donde va los resultados de las busquedas*/
+.container_buscador{
+    width: 99.5%;
+    height: auto;
+    display: center;
+    background-color: var(--color-blanco);
+    padding: 0.625rem;
+    border: 1px solid var(--color-blanco);
+    position: relative;
+    top: 7.5%;
+    margin-left: 0;
+    border-radius: 0.625rem;
+    z-index: 9999; /* Pone el conatiner hasta arriba para que se vea glotante en la pagina */
+}
+/* La caja de container que modifica el texto */
+.container_buscador a {
+    color: var(--color-texto);
+    text-decoration: none; 
+    size: 0.75rem;
     text-align: left; 
   }
 
@@ -75,9 +117,9 @@ body {
     color: rgb(150, 150, 150);
 }
 /* Seccion del buscador termina aqui--------------------------------------------------------*/
-  
+}
 
-
+//FIN DEL MEDIA QUERY DEL BUSCADOR--------------------------------------
 //FIN DE LOS ESTILOS DE NAVEGACION--------------------------------------
 
 //ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
@@ -93,6 +135,7 @@ body {
 .card-img-top:hover{
     filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón por encima */
 }
+
 .card-img-top-1 {
     height: 40rem;
     width: 26rem;
@@ -161,19 +204,21 @@ body {
     }
 }
 
+//INCIO DEL LOS ESTILOS DEL FOOTER-------------------------------------------
 footer {
-    background-color: white;
+    background-color: var(--color-navbar);
     padding:4rem;
     p {
-        color: black;
+        color: var(--color-blanco);
         font-family:Lucida Bright;
         font-size: 1rem;
         margin:0.1rem;
     }
 
-    a{
-        color: black;
+    .link-1{
+        color: var(--color-blanco);
         margin:3rem;
+        text-decoration: none;
     }
 
     img {
@@ -183,5 +228,5 @@ footer {
 }
 
 
-
+//FIN DEL LOS ESTILOS DEL FOOTER-------------------------------------------
 //FIN DE LOS ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
